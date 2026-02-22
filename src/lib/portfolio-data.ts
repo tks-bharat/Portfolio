@@ -58,6 +58,18 @@ export const WORK_EXPERIENCE = [
     details: ["Quantitative methods application", "Alpha signal optimization", "Global research network collaboration"],
   },
   {
+    role: "India Space Tech Intern",
+    company: "India Space Lab (Technical Training Program / Supported by ISRO, NASA, JAXA, UN-GGIM)",
+    period: "June 15 – July 31, 2025",
+    description: "Developed IoT project 'ESP32 Joke Machine for Programmers' integrating ESP32 microcontroller, TFT display, RESTful APIs, and Arduino IDE/Wokwi simulator.",
+    details: [
+      "IoT development (ESP32)",
+      "RESTful APIs & HTTPS",
+      "JSON parsing",
+      "Real-time UI & Edge computing"
+    ],
+  },
+  {
     role: "STEM Education Mentor - Maths & JEE",
     company: "SPSTI (NGO, Haryana)",
     period: "June 2024",
@@ -203,7 +215,7 @@ export const SKILLS = {
   programming: ["Python (Advanced)", "C (Basic)", "Prompt Engineering", "SQL"],
   ai_ml: ["Machine Learning", "OpenCV", "Natural Language Processing", "Hugging Face Transformers", "Reinforcement Learning", "Deep Learning"],
   data_tools: ["MS Excel", "Power BI", "PySpark", "FAISS", "NetworkX", "Neo4j"],
-  frameworks: ["WorldQuant BRAIN", "Next.js", "RESTful APIs", "Arduino IDE", "LaTeX"],
+  frameworks: ["WorldQuant BRAIN", "Next.js", "RESTful APIs", "Arduino IDE", "LaTeX", "IoT (ESP32)"],
 };
 
 export const ACHIEVEMENTS = [
