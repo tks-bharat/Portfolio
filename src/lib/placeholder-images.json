@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract minimalist background for hero section",
+      "imageUrl": "https://images.unsplash.com/photo-1770009971150-f50bc7d373a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhYnN0cmFjdCUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcxNzgyMDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract minimalist"
+    },
+    {
+      "id": "profile-pic",
+      "description": "Professional avatar placeholder",
+      "imageUrl": "https://picsum.photos/seed/tanmay-profile/400/400",
+      "imageHint": "professional avatar"
+    },
+    {
+      "id": "project-graph",
+      "description": "Knowledge graph visualization project",
+      "imageUrl": "https://images.unsplash.com/photo-1656510922456-e9018507288f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkYXRhJTIwZ3JhcGh8ZW58MHx8fHwxNzcxNzgyMDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data graph"
+    },
+    {
+      "id": "project-gst",
+      "description": "Analytics dashboard project",
+      "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzE3MDM1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business analytics"
+    },
+    {
+      "id": "project-ai",
+      "description": "AI reasoning models project",
+      "imageUrl": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc3MTY3MDU2OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "experience-predictram",
+      "description": "Finance and market research office environment",
+      "imageUrl": "https://images.unsplash.com/photo-1738081346394-a52154228e2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxvZmZpY2UlMjBmaW5hbmNlfGVufDB8fHx8MTc3MTc4MjAzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office finance"
+    }
+  ]
 }
