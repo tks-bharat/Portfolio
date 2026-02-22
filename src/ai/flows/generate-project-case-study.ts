@@ -21,10 +21,11 @@ export type GenerateProjectCaseStudyInput = z.infer<
   typeof GenerateProjectCaseStudyInputSchema
 >;
 
-const GenerateProjectCaseStudyOutputSchema = z.string().describe('A concise and engaging case study summary for the project.');
-export type GenerateProjectCaseStudyOutput = z.infer<
-  typeof GenerateProjectCaseStudyOutputSchema
->;
+// Using an object schema for more reliable parsing from the LLM
+const GenerateProjectCaseStudyOutputSchema = z.object({
+  caseStudy: z.string().describe('A concise and engaging case study summary for the project.'),
+});
+export type GenerateProjectCaseStudyOutput = string;
 
 const prompt = ai.definePrompt({
   name: 'generateProjectCaseStudyPrompt',
@@ -45,11 +46,14 @@ const generateProjectCaseStudyFlow = ai.defineFlow(
   {
     name: 'generateProjectCaseStudyFlow',
     inputSchema: GenerateProjectCaseStudyInputSchema,
-    outputSchema: GenerateProjectCaseStudyOutputSchema,
+    outputSchema: z.string(),
   },
   async input => {
     const {output} = await prompt(input);
-    return output!;
+    if (!output || !output.caseStudy) {
+      throw new Error("Failed to generate project case study summary.");
+    }
+    return output.caseStudy;
   }
 );
 
