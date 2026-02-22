@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -8,8 +9,8 @@
     },
     {
       "id": "profile-pic",
-      "description": "Professional avatar placeholder",
-      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "description": "Professional avatar portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
@@ -32,33 +33,15 @@
     },
     {
       "id": "project-asl",
-      "description": "CNN Architecture Visualization",
-      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc3MTg1MTAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cnn architecture"
-    },
-    {
-      "id": "project-writing-helper",
-      "description": "Intelligent writing helper NLP pipeline",
-      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3cml0aW5nJTIwYWl8ZW58MHx8fHwxNzc1NDM1MzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "writing ai"
+      "description": "Accurate sign language gesture communication",
+      "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaWduJTIwbGFuZ3VhZ2V8ZW58MHx8fHwxNzcxODQ5NjQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sign language"
     },
     {
       "id": "project-highway",
       "description": "License Plate Recognition System Night Capture",
       "imageUrl": "https://platerecognizer.com/wp-content/uploads/2021/02/ANPR-process-license-plates-from-video-file.jpg",
       "imageHint": "license plate"
-    },
-    {
-      "id": "project-xray",
-      "description": "Chest X-ray scan for medical analysis",
-      "imageUrl": "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVzdCUyMHhyYXl8ZW58MHx8fHwxNzc1NDM1NDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chest xray"
-    },
-    {
-      "id": "project-news",
-      "description": "Daily news bulletin analysis dashboard",
-      "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZXdzJTIwdmlzdWFsaXphdGlvbnxlbnwwfHx8fDE3NzE4NTEwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "news visualization"
     },
     {
       "id": "experience-predictram",

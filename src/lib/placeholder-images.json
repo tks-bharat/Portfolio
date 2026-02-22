@@ -8,8 +8,8 @@
     },
     {
       "id": "profile-pic",
-      "description": "Professional avatar placeholder",
-      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "description": "Professional avatar portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "professional portrait"
     },
     {
