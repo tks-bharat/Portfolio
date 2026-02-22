@@ -54,6 +54,12 @@
       "description": "Euronews logo for data visualization project",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Euronews_Logo_2025.svg",
       "imageHint": "euronews logo"
+    },
+    {
+      "id": "project-xray",
+      "description": "Animated chest X-ray visualization",
+      "imageUrl": "https://www.itnonline.com/sites/default/files/styles/content_feed_large/public/CovidXRays_1.gif?itok=bpLLywn5",
+      "imageHint": "chest x-ray"
     }
   ]
 }
