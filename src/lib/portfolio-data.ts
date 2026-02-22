@@ -57,6 +57,19 @@ export const WORK_EXPERIENCE = [
     description: "Developed Point-Based Automated Essay Scoring Systems aligned with National Examination Standards.",
     details: ["Marking and feedback automation", "National standards alignment"],
   },
+  {
+    role: "Business Analyst Training (Internship)",
+    company: "Finlatics Enabling Insights, Fincrux Technologies LLP",
+    period: "Oct - Nov 2023",
+    description: "Conducted data analysis on 1M+ data points using MS Excel and Power BI to identify trends for improved business strategies and product positioning.",
+    details: [
+      "Data analysis on 1M+ data points",
+      "MS Excel & Power BI",
+      "Score: 83.33%",
+      "Letter of Recommendation",
+      "Certificate of Qualification"
+    ],
+  },
 ];
 
 export const PROJECTS = [
