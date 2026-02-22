@@ -4,6 +4,7 @@ import { AboutSection } from '@/components/portfolio/AboutSection'
 import { ExperienceSection } from '@/components/portfolio/ExperienceSection'
 import { ProjectsSection } from '@/components/portfolio/ProjectsSection'
 import { SkillsSection } from '@/components/portfolio/SkillsSection'
+import { AchievementsSection } from '@/components/portfolio/AchievementsSection'
 import { Footer } from '@/components/portfolio/Footer'
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
+        <AchievementsSection />
         
         {/* Education Highlight (Minimalist) */}
-        <section className="py-20 bg-background">
+        <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-primary mb-12 text-center">Education</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

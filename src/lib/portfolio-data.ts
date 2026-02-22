@@ -1,4 +1,3 @@
-
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
   title: "Data Scientist & AI Researcher",
@@ -219,8 +218,34 @@ export const SKILLS = {
 };
 
 export const ACHIEVEMENTS = [
-  "All India Rank 4936 in JEE Advanced 2022",
-  "2nd Position at Promptathon’24 (Sugarcane AI)",
-  "P. K. Jain Memorial Award for outstanding academic performance",
-  "Global Rank 1976 in International Quant Championship 2025 Stage 1",
+  {
+    title: "JEE Advanced 2022",
+    description: "Secured All India Rank 4936 in the Joint Entrance Examination (JEE) Advanced, 2022.",
+    category: "Academic",
+  },
+  {
+    title: "Promptathon’24",
+    description: "Secured 2nd position at Promptathon’24 conducted by Sugarcane AI, for building a conversational AI model responding to academic inquiries (2024).",
+    category: "Hackathon",
+  },
+  {
+    title: "KIMO Tech-Competition",
+    description: "Secured 5th position in KIMO Tech-Competition held online, by scoring 107/120 (Feb 2024).",
+    category: "Competitive",
+  },
+  {
+    title: "International Quant Championship 2025",
+    description: "Achieved Global Rank 1976 in Stage 1 and Global Rank 2310 in Stage 2 at International Quant Championship 2025 by WorldQuant, ranking in the top 20% of teams globally (Mar–May 2025).",
+    category: "Finance",
+  },
+  {
+    title: "National Finalist",
+    description: "Participated and advanced as National Finalist in many Case Study Competitions at IIM Jammu, IIM Raipur, XLRI, VNIT Nagpur, SIBM Pune.",
+    category: "Business",
+  },
+  {
+    title: "P. K. Jain Memorial Award",
+    description: "Recipient of the P. K. Jain Memorial Award, presented by the Prof. (Dr.) Rajiv Prakash, Director of IIT Bhilai for outstanding academic performance and significant contributions to the institute’s growth.",
+    category: "Institutional",
+  },
 ];
