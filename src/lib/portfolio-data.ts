@@ -1,6 +1,6 @@
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
-  title: "Data Scientist & AI Researcher",
+  title: "Data & AI Researcher specializing in NLP, LLMs, and scalable machine learning systems",
   institution: "Indian Institute of Technology Bhilai",
   location: "Bhilai, Chhattisgarh, India",
   email: "tanmayku@iitbhilai.ac.in",

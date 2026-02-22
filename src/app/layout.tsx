@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Tanmay Kumar Shrivastava | Data Scientist & AI Researcher',
+  title: 'Tanmay Kumar Shrivastava | Data & AI Researcher specializing in NLP, LLMs, and scalable machine learning systems',
   description: 'Professional portfolio showcasing projects, experience, and skills in Data Science and AI.',
 };
 
