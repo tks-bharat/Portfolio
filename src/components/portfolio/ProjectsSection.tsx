@@ -15,7 +15,7 @@ import {
   DialogDescription,
   DialogTrigger
 } from '@/components/ui/dialog'
-import { Github, ExternalLink, Info, Loader2 } from 'lucide-react'
+import { Github, Info, Loader2 } from 'lucide-react'
 import { generateProjectCaseStudy } from '@/ai/flows/generate-project-case-study'
 
 export function ProjectsSection() {
@@ -53,7 +53,7 @@ export function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project) => (
-            <Card key={project.id} className="group overflow-hidden border border-border/50 hover:border-accent/50 transition-all duration-300 hover:shadow-xl">
+            <Card key={project.id} className="group flex flex-col overflow-hidden border border-border/50 hover:border-accent/50 transition-all duration-300 hover:shadow-xl">
               <div className="relative aspect-video overflow-hidden">
                 <Image 
                   src={PlaceHolderImages.find(img => img.id === project.image)?.imageUrl || 'https://picsum.photos/seed/600/400'} 
@@ -74,8 +74,8 @@ export function ProjectsSection() {
                   {project.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground line-clamp-3 mb-4">
+              <CardContent className="flex-grow">
+                <p className="text-sm text-muted-foreground mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-1">
@@ -87,7 +87,7 @@ export function ProjectsSection() {
                   )}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between items-center gap-2 border-t pt-4 mt-auto">
+              <CardFooter className="flex justify-between items-center gap-2 border-t pt-4">
                 <Dialog onOpenChange={(open) => !open && setCaseStudy(null)}>
                   <DialogTrigger asChild>
                     <Button 
@@ -137,7 +137,7 @@ export function ProjectsSection() {
                 
                 {project.isPrivate ? (
                   <span className="text-[10px] text-muted-foreground italic text-right leading-tight max-w-[140px]">
-                    Currently not available (privacy case for researchers)
+                    currently not available (privacy case for researchers)
                   </span>
                 ) : (
                   <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-accent" asChild>
