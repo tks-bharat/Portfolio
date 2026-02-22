@@ -1,3 +1,4 @@
+
 {
   "placeholderImages": [
     {
@@ -35,6 +36,12 @@
       "description": "Convolutional Neural Network visualization",
       "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc3MTg1MTAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cnn architecture"
+    },
+    {
+      "id": "project-writing-helper",
+      "description": "Intelligent writing helper NLP pipeline",
+      "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3cml0aW5nJTIwYWl8ZW58MHx8fHwxNzc1NDM1MzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "writing ai"
     },
     {
       "id": "experience-predictram",

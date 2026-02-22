@@ -1,3 +1,4 @@
+
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
   title: "Data Scientist & AI Researcher",
@@ -72,6 +73,20 @@ export const PROJECTS = [
     link: "https://github.com/Tanmay-IITDSAI",
     isPrivate: true,
     image: "project-graph"
+  },
+  {
+    id: "intelligent-writing-helper",
+    title: "Intelligent Helper in Writing Problems",
+    category: "NLP",
+    period: "Nov 2024",
+    description: "Curated homework problem recommendation system using a Rewriter–Retriever–Reranker NLP pipeline. Ranked relevant practice problems from user queries, using GPT-2, T5 and FLAN-T5 with Hugging Face Transformers in Python.",
+    problem: "Students struggling to find relevant practice problems for their specific homework queries.",
+    solution: "Implemented a multi-stage NLP pipeline (Rewriter–Retriever–Reranker) using GPT-2, T5, and FLAN-T5 for query reformulation and FAISS for efficient similarity search.",
+    technologies: "Python, GPT-2, T5, FLAN-T5, Hugging Face Transformers, SciQ Dataset, FAISS, PyTorch, ms-marco-MiniLM-L-6-v2",
+    impact: "Created an efficient educational tool for domain-specific science question retrieval.",
+    link: "https://github.com/Tanmay-IITDSAI/Retreiver-Reranker-Intelligent-HW-Prob",
+    isPrivate: false,
+    image: "project-writing-helper"
   },
   {
     id: "asl-recognition",
