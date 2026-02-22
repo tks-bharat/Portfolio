@@ -34,17 +34,17 @@ export function SkillsSection() {
   }
 
   return (
-    <section id="skills" className="py-20 bg-secondary/30">
+    <section id="skills" className="py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold text-primary mb-4">Skills Showcase</h2>
+            <h2 className="text-3xl font-bold text-white mb-4">Skills Showcase</h2>
             {aiBlurb ? (
               <p className="text-accent font-medium leading-relaxed italic animate-in fade-in">
                 "{aiBlurb}"
               </p>
             ) : (
-              <p className="text-muted-foreground">
+              <p className="text-white/60">
                 A technical stack focused on Data Science, Artificial Intelligence, and scalable backend solutions.
               </p>
             )}
@@ -54,7 +54,7 @@ export function SkillsSection() {
             size="sm" 
             onClick={handleGenerateBlurb}
             disabled={loading}
-            className="gap-2 border-accent text-accent-foreground hover:bg-accent/10 whitespace-nowrap self-start md:self-auto"
+            className="gap-2 border-accent text-white hover:bg-accent/10 whitespace-nowrap self-start md:self-auto"
           >
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />}
             Generate AI Blurb
@@ -63,32 +63,31 @@ export function SkillsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {SKILL_CATEGORIES.map((cat) => (
-            <Card key={cat.id} className="border-none shadow-sm hover:shadow-md transition-shadow">
+            <Card key={cat.id} className="border-white/10 bg-black/40 backdrop-blur-md shadow-xl hover:bg-black/50 transition-all">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="p-2 bg-accent/10 rounded-lg">
                     <cat.icon className="h-6 w-6 text-accent" />
                   </div>
-                  <h3 className="text-lg font-bold text-primary">{cat.label}</h3>
+                  <h3 className="text-lg font-bold text-white">{cat.label}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {cat.items.map((item, idx) => (
                     <Badge 
                       key={idx} 
-                      className="px-4 py-1.5 bg-background border-border text-foreground hover:border-accent hover:bg-accent hover:text-accent-foreground transition-all cursor-default text-sm"
+                      className="px-4 py-1.5 bg-white/5 border-white/10 text-white/90 hover:border-accent hover:text-accent transition-all cursor-default text-sm"
                     >
                       {item}
                     </Badge>
                   ))}
                 </div>
-                {/* Visual Proficiency bars for illustrative purpose */}
                 <div className="mt-8 space-y-4">
                   <div className="space-y-1">
-                    <div className="flex justify-between text-xs font-semibold text-muted-foreground">
+                    <div className="flex justify-between text-xs font-semibold text-white/40">
                       <span>Expertise Level</span>
-                      <span>{cat.id === 'ai_ml' ? 'Advanced' : cat.id === 'programming' ? 'Core' : 'Proficient'}</span>
+                      <span className="text-accent">{cat.id === 'ai_ml' ? 'Advanced' : cat.id === 'programming' ? 'Core' : 'Proficient'}</span>
                     </div>
-                    <Progress value={cat.id === 'ai_ml' ? 90 : 85} className="h-1" />
+                    <Progress value={cat.id === 'ai_ml' ? 90 : 85} className="h-1 bg-white/10" />
                   </div>
                 </div>
               </CardContent>

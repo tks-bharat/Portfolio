@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from 'react'
@@ -43,11 +42,11 @@ export function ProjectsSection() {
   }
 
   return (
-    <section id="projects" className="py-20 bg-background">
+    <section id="projects" className="py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-primary mb-4">Interactive Projects Gallery</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">Interactive Projects Gallery</h2>
+          <p className="text-white/60 max-w-2xl mx-auto">
             A showcase of my recent research publications, technical projects, and hackathon wins.
           </p>
         </div>
@@ -59,8 +58,8 @@ export function ProjectsSection() {
             const imageHint = projectImage?.imageHint || 'project visual'
 
             return (
-              <Card key={project.id} className="group flex flex-col overflow-hidden border border-border/50 hover:border-accent/50 transition-all duration-300 hover:shadow-xl">
-                <div className="relative aspect-video overflow-hidden bg-secondary/30">
+              <Card key={project.id} className="group flex flex-col overflow-hidden border border-white/10 bg-black/40 backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:border-accent/50">
+                <div className="relative aspect-video overflow-hidden bg-black/60">
                   {imageUrl ? (
                     <Image 
                       src={imageUrl} 
@@ -70,74 +69,71 @@ export function ProjectsSection() {
                       data-ai-hint={imageHint}
                     />
                   ) : (
-                    <div className="absolute inset-0 flex items-center justify-center p-6 text-center bg-gradient-to-br from-primary/5 to-accent/10">
-                      <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">{project.category}</span>
+                    <div className="absolute inset-0 flex items-center justify-center p-6 text-center bg-gradient-to-br from-white/5 to-accent/10">
+                      <span className="text-xs font-bold text-white/40 uppercase tracking-widest">{project.category}</span>
                     </div>
                   )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <Badge className="bg-accent text-accent-foreground">{project.category}</Badge>
                   </div>
                 </div>
                 <CardHeader>
                   <div className="flex justify-between items-start mb-2">
-                    <Badge variant="outline" className="text-[10px]">{project.period}</Badge>
+                    <Badge variant="outline" className="text-[10px] text-white/60 border-white/20">{project.period}</Badge>
                   </div>
-                  <CardTitle className="text-lg leading-tight group-hover:text-accent transition-colors">
+                  <CardTitle className="text-lg leading-tight text-white group-hover:text-accent transition-colors">
                     {project.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground mb-4 whitespace-pre-line">
+                  <p className="text-sm text-white/70 mb-4 whitespace-pre-line">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-1">
                     {project.technologies.split(',').slice(0, 3).map((tech, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-[9px] font-normal">{tech.trim()}</Badge>
+                      <Badge key={idx} variant="secondary" className="text-[9px] font-normal bg-white/5 text-white/80">{tech.trim()}</Badge>
                     ))}
-                    {project.technologies.split(',').length > 3 && (
-                      <Badge variant="secondary" className="text-[9px] font-normal">+{project.technologies.split(',').length - 3}</Badge>
-                    )}
                   </div>
                 </CardContent>
-                <CardFooter className="flex justify-between items-center gap-2 border-t pt-4">
+                <CardFooter className="flex justify-between items-center gap-2 border-t border-white/10 pt-4">
                   <Dialog onOpenChange={(open) => !open && setCaseStudy(null)}>
                     <DialogTrigger asChild>
                       <Button 
                         variant="ghost" 
                         size="sm" 
-                        className="text-xs gap-1 hover:text-accent"
+                        className="text-xs gap-1 text-white/60 hover:text-accent hover:bg-white/5"
                         onClick={() => handleFetchCaseStudy(project)}
                       >
                         <Info className="h-3 w-3" />
                         View Case Study
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto bg-black/90 backdrop-blur-xl border-white/10 text-white">
                       <DialogHeader>
-                        <DialogTitle className="text-primary">{project.title}</DialogTitle>
-                        <DialogDescription>Project Overview & AI Analysis</DialogDescription>
+                        <DialogTitle className="text-accent">{project.title}</DialogTitle>
+                        <DialogDescription className="text-white/60">Project Overview & AI Analysis</DialogDescription>
                       </DialogHeader>
                       <div className="space-y-6 pt-4">
                         {loadingStudy === project.id ? (
                           <div className="flex flex-col items-center justify-center py-12 gap-4">
                             <Loader2 className="h-8 w-8 animate-spin text-accent" />
-                            <p className="text-sm text-muted-foreground">AI is synthesizing a case study...</p>
+                            <p className="text-sm text-white/60">AI is synthesizing a case study...</p>
                           </div>
                         ) : (
                           <>
                             <div className="grid grid-cols-2 gap-4">
-                              <div className="p-3 bg-secondary/30 rounded-lg">
-                                <h5 className="font-bold text-xs uppercase text-primary/70 mb-1">Impact</h5>
+                              <div className="p-3 bg-white/5 rounded-lg border border-white/10">
+                                <h5 className="font-bold text-xs uppercase text-accent mb-1">Impact</h5>
                                 <p className="text-sm">{project.impact || "Exploration of novel concepts in AI."}</p>
                               </div>
-                              <div className="p-3 bg-secondary/30 rounded-lg">
-                                <h5 className="font-bold text-xs uppercase text-primary/70 mb-1">Stack</h5>
+                              <div className="p-3 bg-white/5 rounded-lg border border-white/10">
+                                <h5 className="font-bold text-xs uppercase text-accent mb-1">Stack</h5>
                                 <p className="text-sm">{project.technologies}</p>
                               </div>
                             </div>
-                            <div className="prose prose-sm max-w-none">
-                              <h4 className="text-primary mb-2">Detailed Summary</h4>
-                              <p className="text-muted-foreground whitespace-pre-line leading-relaxed">
+                            <div className="prose prose-sm prose-invert max-w-none">
+                              <h4 className="text-white mb-2">Detailed Summary</h4>
+                              <p className="text-white/70 whitespace-pre-line leading-relaxed">
                                 {caseStudy || project.description}
                               </p>
                             </div>
@@ -148,11 +144,11 @@ export function ProjectsSection() {
                   </Dialog>
                   
                   {project.isPrivate ? (
-                    <span className="text-[10px] text-muted-foreground italic text-right leading-tight max-w-[140px]">
-                      currently not available (privacy case for researchers)
+                    <span className="text-[10px] text-white/40 italic text-right leading-tight max-w-[140px]">
+                      currently private
                     </span>
                   ) : (
-                    <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-accent" asChild>
+                    <Button variant="ghost" size="icon" className="h-8 w-8 text-white/60 hover:text-accent hover:bg-white/5" asChild>
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4" />
                       </a>

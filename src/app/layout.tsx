@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
+import { GlobalShaderBackground } from '@/components/ui/global-shader-background';
 
 export const metadata: Metadata = {
   title: 'Tanmay Kumar Shrivastava | Data & AI Researcher specializing in NLP, LLMs, and scalable machine learning systems',
@@ -19,8 +20,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-background text-foreground">
-        {children}
+      <body className="font-body antialiased bg-black text-foreground">
+        <GlobalShaderBackground />
+        <div className="relative z-10">
+          {children}
+        </div>
         <Toaster />
       </body>
     </html>

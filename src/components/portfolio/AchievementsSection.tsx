@@ -17,11 +17,11 @@ const getIcon = (title: string) => {
 
 export function AchievementsSection() {
   return (
-    <section id="achievements" className="py-20 bg-background">
+    <section id="achievements" className="py-20 bg-transparent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-primary mb-4">Honors & Achievements</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">Honors & Achievements</h2>
+          <p className="text-white/60 max-w-2xl mx-auto">
             A track record of excellence in competitive examinations, hackathons, and academic pursuits.
           </p>
         </div>
@@ -30,20 +30,20 @@ export function AchievementsSection() {
           {ACHIEVEMENTS.map((achievement, index) => {
             const IconComponent = getIcon(achievement.title)
             return (
-              <Card key={index} className="border border-border/50 hover:border-accent/50 transition-all hover:shadow-md">
+              <Card key={index} className="border border-white/10 bg-black/40 backdrop-blur-md hover:border-accent/50 transition-all hover:shadow-2xl">
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between mb-2">
                     <div className="p-2 bg-accent/10 rounded-lg">
                       <IconComponent className="h-5 w-5 text-accent" />
                     </div>
-                    <Badge variant="secondary" className="text-[10px] uppercase tracking-wider font-bold">
+                    <Badge variant="secondary" className="text-[10px] uppercase tracking-wider font-bold bg-white/5 text-white/80">
                       {achievement.category}
                     </Badge>
                   </div>
-                  <CardTitle className="text-lg text-primary">{achievement.title}</CardTitle>
+                  <CardTitle className="text-lg text-white">{achievement.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm text-white/60 leading-relaxed">
                     {achievement.description}
                   </p>
                 </CardContent>
