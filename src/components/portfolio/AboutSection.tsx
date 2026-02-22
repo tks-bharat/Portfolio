@@ -33,11 +33,11 @@ export function AboutSection() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-3xl font-bold text-white">About Me</h2>
             <Button 
-              variant="outline" 
+              variant="default" 
               size="sm" 
               onClick={handleGenerateSummary}
               disabled={loading}
-              className="gap-2 border-accent text-white hover:bg-accent/10"
+              className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
               {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />}
               Enhance with AI
