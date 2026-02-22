@@ -70,6 +70,7 @@ export const PROJECTS = [
     technologies: "Python, LLaMA-2-7B, HuggingFace Transformers, NetworkX, Matplotlib, Gemini 2.5 Flash Lite",
     impact: "Achieved optimal balance of style and factual fidelity near alpha=3.0.",
     link: "https://github.com/Tanmay-IITDSAI",
+    isPrivate: true,
     image: "project-graph"
   },
   {
@@ -83,6 +84,7 @@ export const PROJECTS = [
     technologies: "XGBoost, SMOTE, PCA, Data Science, Python, Web Development",
     impact: "Boosted recall and precision for irregular transaction detection.",
     link: "https://github.com/Tanmay-IITDSAI/GSTAnalyticsHackathon-24",
+    isPrivate: false,
     image: "project-gst"
   },
   {
@@ -96,6 +98,7 @@ export const PROJECTS = [
     technologies: "Genkit.ai, Next.js, shadcn/ui, Gemini-2.5-flash, GPT-OSS, Tailwind",
     impact: "Created a transparent Mirror Log for auditable self-reflection.",
     link: "https://github.com/realGuyCrimson/veritaserum-gptoss",
+    isPrivate: false,
     image: "project-ai"
   },
 ];

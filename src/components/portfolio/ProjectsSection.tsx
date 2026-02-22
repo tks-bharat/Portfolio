@@ -87,7 +87,7 @@ export function ProjectsSection() {
                   )}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between gap-2 border-t pt-4 mt-auto">
+              <CardFooter className="flex justify-between items-center gap-2 border-t pt-4 mt-auto">
                 <Dialog onOpenChange={(open) => !open && setCaseStudy(null)}>
                   <DialogTrigger asChild>
                     <Button 
@@ -134,9 +134,18 @@ export function ProjectsSection() {
                     </div>
                   </DialogContent>
                 </Dialog>
-                <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-accent" asChild>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer"><Github className="h-4 w-4" /></a>
-                </Button>
+                
+                {project.isPrivate ? (
+                  <span className="text-[10px] text-muted-foreground italic text-right leading-tight max-w-[140px]">
+                    Currently not available (privacy case for researchers)
+                  </span>
+                ) : (
+                  <Button variant="ghost" size="icon" className="h-8 w-8 hover:text-accent" asChild>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4" />
+                    </a>
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}
