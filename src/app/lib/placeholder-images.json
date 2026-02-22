@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract minimalist background for hero section",
+      "imageUrl": "https://picsum.photos/seed/portfolio-hero/1200/600",
+      "imageHint": "abstract minimalist"
+    },
+    {
+      "id": "profile-pic",
+      "description": "Professional avatar placeholder",
+      "imageUrl": "https://picsum.photos/seed/tanmay-profile/400/400",
+      "imageHint": "professional avatar"
+    },
+    {
+      "id": "project-graph",
+      "description": "Knowledge graph visualization project",
+      "imageUrl": "https://picsum.photos/seed/graph/600/400",
+      "imageHint": "data graph"
+    },
+    {
+      "id": "project-gst",
+      "description": "Analytics dashboard project",
+      "imageUrl": "https://picsum.photos/seed/analytics/600/400",
+      "imageHint": "business analytics"
+    },
+    {
+      "id": "project-ai",
+      "description": "AI reasoning models project",
+      "imageUrl": "https://picsum.photos/seed/ai-reasoning/600/400",
+      "imageHint": "artificial intelligence"
+    },
+    {
+      "id": "experience-predictram",
+      "description": "Finance and market research office environment",
+      "imageUrl": "https://picsum.photos/seed/finance/600/400",
+      "imageHint": "office finance"
+    }
+  ]
+}
