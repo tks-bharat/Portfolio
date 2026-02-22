@@ -1,4 +1,3 @@
-
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
   title: "Data Scientist & AI Researcher",
@@ -75,7 +74,7 @@ export const PROJECTS = [
     image: "project-graph"
   },
   {
-    id: "intelligent-writing-helper",
+    id: "writing-helper",
     title: "Intelligent Helper in Writing Problems",
     category: "NLP",
     period: "Nov 2024",
@@ -115,6 +114,20 @@ export const PROJECTS = [
     link: "https://github.com/vedanshbvb/aiml-project",
     isPrivate: false,
     image: "project-highway"
+  },
+  {
+    id: "xray-prediction",
+    title: "33GB Chest X-Ray Disease Prediction",
+    category: "Medical AI / Deep Learning",
+    period: "Mar 2024",
+    description: "Achieved ≥95% accuracy on chest X-ray disease dataset for differentiating between corona and pneumonia of 84,818 images within 3 hours and <5ms inference latency using PySpark. Implemented separate validation and test sets; deployed the model via GitHub.",
+    problem: "Efficiently processing massive medical datasets for rapid disease classification.",
+    solution: "Leveraged PySpark for distributed processing and TensorFlow/Keras for high-accuracy medical imaging models.",
+    technologies: "TensorFlow, Keras, PySpark, scikit-learn, ML, OpenCV, NumPy, Matplotlib",
+    impact: "High accuracy (95%+) and extremely low inference latency (<5ms).",
+    link: "https://github.com/Tanmay-IITDSAI/X-Ray-Disease-Prediction",
+    isPrivate: false,
+    image: "project-xray"
   },
   {
     id: "gst-analytics",
