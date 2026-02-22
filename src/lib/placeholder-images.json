@@ -38,9 +38,9 @@
     },
     {
       "id": "project-highway",
-      "description": "Night-time traffic with cars at traffic lights",
-      "imageUrl": "https://images.unsplash.com/photo-1519003300449-424ad040507b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "traffic night"
+      "description": "License Plate Recognition System Night Capture",
+      "imageUrl": "https://platerecognizer.com/wp-content/uploads/2021/02/ANPR-process-license-plates-from-video-file.jpg",
+      "imageHint": "license plate"
     },
     {
       "id": "experience-predictram",

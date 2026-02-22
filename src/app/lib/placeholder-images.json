@@ -1,4 +1,3 @@
-
 {
   "placeholderImages": [
     {
@@ -22,7 +21,7 @@
     {
       "id": "project-gst",
       "description": "Analytics dashboard project",
-      "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzE3MDM1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw8fHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzE3MDM1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business analytics"
     },
     {
@@ -46,7 +45,7 @@
     {
       "id": "project-highway",
       "description": "License Plate Recognition System Night Capture",
-      "imageUrl": "https://images.unsplash.com/photo-1545147429-994792408387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmFmZmljJTIwbmlnaHR8ZW58MHx8fHwxNzc1NDM1NDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://platerecognizer.com/wp-content/uploads/2021/02/ANPR-process-license-plates-from-video-file.jpg",
       "imageHint": "license plate"
     },
     {
