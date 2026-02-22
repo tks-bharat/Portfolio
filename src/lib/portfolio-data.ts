@@ -44,6 +44,13 @@ export const WORK_EXPERIENCE = [
     image: "experience-predictram"
   },
   {
+    role: "Backend Developer Intern",
+    company: "MegaForte Ltd. Singapore",
+    period: "Oct 2025 - Dec 2025",
+    description: "Developed Point-Based Automated Essay Scoring Systems aligned with National Examination Standards.",
+    details: ["Marking and feedback automation", "National standards alignment"],
+  },
+  {
     role: "Quantitative Research Consultant",
     company: "WorldQuant LLC",
     period: "June 2025 - Present",
@@ -51,11 +58,16 @@ export const WORK_EXPERIENCE = [
     details: ["Quantitative methods application", "Alpha signal optimization", "Global research network collaboration"],
   },
   {
-    role: "Backend Developer Intern",
-    company: "MegaForte Ltd. Singapore",
-    period: "Oct 2025 - Dec 2025",
-    description: "Developed Point-Based Automated Essay Scoring Systems aligned with National Examination Standards.",
-    details: ["Marking and feedback automation", "National standards alignment"],
+    role: "STEM Education Mentor - Maths & JEE",
+    company: "SPSTI (NGO, Haryana)",
+    period: "June 2024",
+    description: "Guided IX-X students in preparation for JEE and national-level exams, mentoring them in mathematics and problem-solving.",
+    details: [
+      "Mentoring for JEE & National Exams",
+      "Ceremony Anchoring",
+      "Report Presentation to DM",
+      "Memento for Outstanding Contributions"
+    ],
   },
   {
     role: "Business Analyst Training (Internship)",
