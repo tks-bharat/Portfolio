@@ -46,11 +46,6 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button variant="outline" size="sm" asChild>
-            <a href="/resume.pdf" download>
-              CV Download
-            </a>
-          </Button>
         </nav>
 
         {/* Mobile Nav */}
@@ -76,11 +71,6 @@ export function Header() {
                       {item.label}
                     </Link>
                   ))}
-                  <Button className="w-full mt-4" asChild>
-                    <a href="/resume.pdf" download>
-                      Download CV
-                    </a>
-                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
