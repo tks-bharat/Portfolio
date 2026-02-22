@@ -50,11 +50,11 @@ export function SkillsSection() {
             )}
           </div>
           <Button 
-            variant="outline" 
+            variant="default" 
             size="sm" 
             onClick={handleGenerateBlurb}
             disabled={loading}
-            className="gap-2 border-accent text-white hover:bg-accent/10 whitespace-nowrap self-start md:self-auto"
+            className="gap-2 bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/20 whitespace-nowrap self-start md:self-auto"
           >
             {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Wand2 className="h-4 w-4" />}
             Generate AI Blurb
