@@ -60,6 +60,12 @@
       "description": "Animated chest X-ray visualization",
       "imageUrl": "https://www.itnonline.com/sites/default/files/styles/content_feed_large/public/CovidXRays_1.gif?itok=bpLLywn5",
       "imageHint": "chest x-ray"
+    },
+    {
+      "id": "project-writing-helper",
+      "description": "Intelligent writing assistant visualization",
+      "imageUrl": "https://thumbs.dreamstime.com/b/el-cierre-de-la-escritura-los-cient%C3%ADficos-da-como-resultado-un-cuaderno-laboratorio-en-estado-anal%C3%ADtico-ia-generativa-con-%C3%A1nimo-392521568.jpg",
+      "imageHint": "writing analysis"
     }
   ]
 }
