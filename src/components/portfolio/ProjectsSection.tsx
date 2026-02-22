@@ -81,7 +81,7 @@ export function ProjectsSection() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-sm text-muted-foreground mb-4 whitespace-pre-line">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-1">

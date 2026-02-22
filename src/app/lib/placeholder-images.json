@@ -33,8 +33,8 @@
     },
     {
       "id": "project-asl",
-      "description": "Sign language for deaf people",
-      "imageUrl": "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzaWduJTIwbGFuZ3VhZ2V8ZW58MHx8fHwxNzcxNzgyMDMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Accurate sign language gesture communication",
+      "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaWduJTIwbGFuZ3VhZ2V8ZW58MHx8fHwxNzcxODQ5NjQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sign language"
     },
     {
