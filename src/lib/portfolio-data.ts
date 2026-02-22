@@ -112,8 +112,7 @@ export const PROJECTS = [
     technologies: "Python, SQL, OpenCV, PyTesseract, MySQL Connector, PIL, NumPy",
     impact: "Automated traffic monitoring in low-light conditions.",
     link: "https://github.com/vedanshbvb/aiml-project",
-    isPrivate: false,
-    image: "project-highway"
+    isPrivate: false
   },
   {
     id: "xray-prediction",
@@ -148,7 +147,7 @@ export const PROJECTS = [
     title: "veri-TA-serum: Deception Mirror AI",
     category: "Hackathon (DevPost)",
     period: "Oct 2024",
-    description: "AI system to detect and challenge self-deception using linear probes, symbolic sanity checks, and debate agents.",
+    description: "AI system to detect and challenge self-deception using linear probes, symbolic sanity checks, and debate agents. Blended AI approach using gpt-oss-120b and gemini-2.5-flash for deception risk scoring and counter-narratives.",
     problem: "Human self-deception in personal goal setting and claims.",
     solution: "Blended AI approach using gpt-oss-120b and gemini-2.5-flash for deception risk scoring and counter-narratives.",
     technologies: "Genkit.ai, Next.js, shadcn/ui, Gemini-2.5-flash, GPT-OSS, Tailwind",

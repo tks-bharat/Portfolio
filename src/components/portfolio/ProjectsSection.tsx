@@ -53,20 +53,26 @@ export function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project) => {
-            const projectImage = PlaceHolderImages.find(img => img.id === project.image)
-            const imageUrl = projectImage?.imageUrl || 'https://picsum.photos/seed/600/400'
+            const projectImage = project.image ? PlaceHolderImages.find(img => img.id === project.image) : null
+            const imageUrl = projectImage?.imageUrl
             const imageHint = projectImage?.imageHint || 'project visual'
 
             return (
               <Card key={project.id} className="group flex flex-col overflow-hidden border border-border/50 hover:border-accent/50 transition-all duration-300 hover:shadow-xl">
-                <div className="relative aspect-video overflow-hidden">
-                  <Image 
-                    src={imageUrl} 
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    data-ai-hint={imageHint}
-                  />
+                <div className="relative aspect-video overflow-hidden bg-secondary/30">
+                  {imageUrl ? (
+                    <Image 
+                      src={imageUrl} 
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      data-ai-hint={imageHint}
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center p-6 text-center bg-gradient-to-br from-primary/5 to-accent/10">
+                      <span className="text-xs font-bold text-muted-foreground/60 uppercase tracking-widest">{project.category}</span>
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <Badge className="bg-accent text-accent-foreground">{project.category}</Badge>
                   </div>
