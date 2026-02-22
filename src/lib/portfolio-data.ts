@@ -74,6 +74,20 @@ export const PROJECTS = [
     image: "project-graph"
   },
   {
+    id: "asl-recognition",
+    title: "Advanced American Sign Language Recognition using CNN",
+    category: "Deep Learning",
+    period: "Nov 2024",
+    description: "Developed a CNN model to classify 36 ASL gestures (A–Z, 0–9) with 94% accuracy, improving accessibility for the deaf community. Designed a 3-block Sequential CNN with ReLU activation, dropout regularization and Adam optimizer with categorical cross-entropy loss. Used EarlyStopping and ReduceLROnPlateau to balance class performance; achieved macro-averaged F1-score of 95%.",
+    problem: "Limited automated systems for accurate real-time American Sign Language recognition.",
+    solution: "Implemented a 3-block Sequential CNN architecture with Dropout and optimized training schedules.",
+    technologies: "Python, TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Seaborn",
+    impact: "94% classification accuracy and 95% macro-averaged F1-score.",
+    link: "https://github.com/kirtiraj2215/Sign-language-decoder-DIP/tree/main",
+    isPrivate: false,
+    image: "project-asl"
+  },
+  {
     id: "gst-analytics",
     title: "GST Analytics Hackathon: Detection of Irregular Transactions",
     category: "Hackathon",
