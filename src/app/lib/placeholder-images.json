@@ -45,9 +45,9 @@
     },
     {
       "id": "project-highway",
-      "description": "Highway traffic monitoring and violation detection",
+      "description": "Number Plate Extraction from cars and vehicles at night",
       "imageUrl": "https://images.unsplash.com/photo-1545147429-994792408387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmFmZmljJTIwbmlnaHR8ZW58MHx8fHwxNzc1NDM1NDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "traffic night"
+      "imageHint": "license plate"
     },
     {
       "id": "experience-predictram",
