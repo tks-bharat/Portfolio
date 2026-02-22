@@ -157,6 +157,20 @@ export const PROJECTS = [
     isPrivate: false,
     image: "project-ai"
   },
+  {
+    id: "news-visualization",
+    title: "Data Visualization on Repetition of Everyday Non-Stop News",
+    category: "Data Visualization / NLP",
+    period: "Nov 2023",
+    description: "Performed EDA and visualization on 1450 news transcripts from YouTube (Euro News) and other sources to study dynamics of repeated news. Used Hugging Face libraries for sentiment analysis, topic modeling and text summarization; visualized results with charts and graphs.",
+    problem: "Studying the dynamics and repetition patterns in daily news bulletins across large transcript datasets.",
+    solution: "Used NLP techniques including sentiment analysis, topic modeling, and semantic similarity with YouTube Transcript API for data collection and EDA.",
+    technologies: "Python, Seaborn, Matplotlib, Pandas, Hugging Face Transformers, MiniLM-L6-v2, clips/mfaq, YouTube Transcript API",
+    impact: "Provided insights into news repetition dynamics through comprehensive visual analysis.",
+    link: "https://github.com/shivamlth27/Analysis-of-Daily-News-Bulletin",
+    isPrivate: false,
+    image: "project-news"
+  },
 ];
 
 export const SKILLS = {
