@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { PERSONAL_INFO } from '@/lib/portfolio-data'
 import { Button } from '@/components/ui/button'
-import { Download, Menu } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import {
   Sheet,
   SheetContent,
@@ -46,9 +46,8 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <Button variant="outline" size="sm" className="gap-2" asChild>
+          <Button variant="outline" size="sm" asChild>
             <a href="/resume.pdf" download>
-              <Download className="h-4 w-4" />
               CV Download
             </a>
           </Button>
@@ -77,9 +76,8 @@ export function Header() {
                       {item.label}
                     </Link>
                   ))}
-                  <Button className="w-full gap-2 mt-4" asChild>
+                  <Button className="w-full mt-4" asChild>
                     <a href="/resume.pdf" download>
-                      <Download className="h-4 w-4" />
                       Download CV
                     </a>
                   </Button>
