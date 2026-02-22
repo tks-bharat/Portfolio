@@ -1,3 +1,4 @@
+
 'use server';
 /**
  * @fileOverview A Genkit flow for generating a concise and engaging case study summary for a project.
@@ -24,6 +25,9 @@ export type GenerateProjectCaseStudyInput = z.infer<
 const GenerateProjectCaseStudyOutputSchema = z.object({
   caseStudy: z.string().describe('A concise and engaging case study summary for the project.'),
 });
+export type GenerateProjectCaseStudyOutput = z.infer<
+  typeof GenerateProjectCaseStudyOutputSchema
+>;
 
 const prompt = ai.definePrompt({
   name: 'generateProjectCaseStudyPrompt',
@@ -46,19 +50,19 @@ const generateProjectCaseStudyFlow = ai.defineFlow(
   {
     name: 'generateProjectCaseStudyFlow',
     inputSchema: GenerateProjectCaseStudyInputSchema,
-    outputSchema: z.string(),
+    outputSchema: GenerateProjectCaseStudyOutputSchema,
   },
   async input => {
     const {output} = await prompt(input);
     if (!output || !output.caseStudy) {
       throw new Error("Failed to generate project case study summary.");
     }
-    return output.caseStudy;
+    return output;
   }
 );
 
 export async function generateProjectCaseStudy(
   input: GenerateProjectCaseStudyInput
-): Promise<string> {
+): Promise<GenerateProjectCaseStudyOutput> {
   return generateProjectCaseStudyFlow(input);
 }

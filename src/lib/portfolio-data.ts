@@ -103,6 +103,20 @@ export const PROJECTS = [
     image: "project-asl"
   },
   {
+    id: "highway-watch",
+    title: "Intelligent Highway Watch (For Night-time Conditions)",
+    category: "Computer Vision / ML",
+    period: "Sep 2024",
+    description: "Built an automated traffic violation detection system for night-time conditions using computer vision and ML. Detected stop-line violations and identified vehicles through license plate recognition using MySQL Connector, PIL, OpenCV and pytesseract.",
+    problem: "Automating night-time traffic violation detection and vehicle identification.",
+    solution: "Developed an image processing pipeline using HSV color masks for stop-lines and Pytesseract for license plate recognition, integrated with a SQL database for logging.",
+    technologies: "Python, SQL, OpenCV, PyTesseract, MySQL Connector, PIL, NumPy",
+    impact: "Automated traffic monitoring in low-light conditions.",
+    link: "https://github.com/vedanshbvb/aiml-project",
+    isPrivate: false,
+    image: "project-highway"
+  },
+  {
     id: "gst-analytics",
     title: "GST Analytics Hackathon: Detection of Irregular Transactions",
     category: "Hackathon",

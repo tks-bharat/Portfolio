@@ -33,7 +33,7 @@
     },
     {
       "id": "project-asl",
-      "description": "Convolutional Neural Network visualization",
+      "description": "Convolutional Neural Network visualization for sign language",
       "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc3MTg1MTAwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cnn architecture"
     },
@@ -42,6 +42,12 @@
       "description": "Intelligent writing helper NLP pipeline",
       "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3cml0aW5nJTIwYWl8ZW58MHx8fHwxNzc1NDM1MzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "writing ai"
+    },
+    {
+      "id": "project-highway",
+      "description": "Highway traffic monitoring and violation detection",
+      "imageUrl": "https://images.unsplash.com/photo-1545147429-994792408387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0cmFmZmljJTIwbmlnaHR8ZW58MHx8fHwxNzc1NDM1NDAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traffic night"
     },
     {
       "id": "experience-predictram",
