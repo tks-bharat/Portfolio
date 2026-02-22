@@ -6,8 +6,11 @@ import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Mail, Github, Linkedin, MapPin } from 'lucide-react'
 
 export function Hero() {
-  const profileImg = PlaceHolderImages.find(img => img.id === 'profile-pic')?.imageUrl || 'https://picsum.photos/seed/tanmay-profile/400/400'
-  const heroBg = PlaceHolderImages.find(img => img.id === 'hero-bg')?.imageUrl || 'https://picsum.photos/seed/portfolio-hero/1200/600'
+  const profileImgObj = PlaceHolderImages.find(img => img.id === 'profile-pic')
+  const profileImg = (profileImgObj && profileImgObj.imageUrl) ? profileImgObj.imageUrl : 'https://picsum.photos/seed/tanmay-profile/400/400'
+  
+  const heroBgObj = PlaceHolderImages.find(img => img.id === 'hero-bg')
+  const heroBg = (heroBgObj && heroBgObj.imageUrl) ? heroBgObj.imageUrl : 'https://picsum.photos/seed/portfolio-hero/1200/600'
 
   return (
     <section className="relative overflow-hidden bg-primary py-20 lg:py-32">
