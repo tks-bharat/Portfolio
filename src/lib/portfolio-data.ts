@@ -1,3 +1,4 @@
+
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
   title: "Data Scientist & AI Researcher",
@@ -112,7 +113,8 @@ export const PROJECTS = [
     technologies: "Python, SQL, OpenCV, PyTesseract, MySQL Connector, PIL, NumPy",
     impact: "Automated traffic monitoring in low-light conditions.",
     link: "https://github.com/vedanshbvb/aiml-project",
-    isPrivate: false
+    isPrivate: false,
+    image: "project-highway"
   },
   {
     id: "xray-prediction",
