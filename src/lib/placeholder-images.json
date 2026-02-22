@@ -9,8 +9,8 @@
     {
       "id": "profile-pic",
       "description": "Professional avatar placeholder",
-      "imageUrl": "https://picsum.photos/seed/tanmay-profile/400/400",
-      "imageHint": "professional avatar"
+      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "professional portrait"
     },
     {
       "id": "project-graph",
