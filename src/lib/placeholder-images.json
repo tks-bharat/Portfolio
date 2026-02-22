@@ -21,7 +21,7 @@
     {
       "id": "project-gst",
       "description": "Analytics dashboard project",
-      "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzE3MDM1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1524749292158-7540c2494485?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw8fHxidXNpbmVzcyUyMGFuYWx5dGljc3xlbnwwfHx8fDE3NzE3MDM1MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business analytics"
     },
     {
@@ -35,6 +35,12 @@
       "description": "Accurate sign language gesture communication",
       "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaWduJTIwbGFuZ3VhZ2V8ZW58MHx8fHwxNzcxODQ5NjQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sign language"
+    },
+    {
+      "id": "project-highway",
+      "description": "Night-time traffic with cars at traffic lights",
+      "imageUrl": "https://images.unsplash.com/photo-1519003300449-424ad040507b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "traffic night"
     },
     {
       "id": "experience-predictram",
