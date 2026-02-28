@@ -1,10 +1,11 @@
+
 "use client"
 
 import React from 'react'
 import { ACHIEVEMENTS } from '@/lib/portfolio-data'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Trophy, Award, Target, Globe, Cpu, Star } from 'lucide-react'
+import { Trophy, Award, Target, Globe, Cpu, Star, Zap } from 'lucide-react'
 
 const getIcon = (title: string) => {
   if (title.includes('JEE')) return Trophy
@@ -12,6 +13,7 @@ const getIcon = (title: string) => {
   if (title.includes('KIMO')) return Award
   if (title.includes('Quant')) return Globe
   if (title.includes('Finalist')) return Target
+  if (title.includes('Summit')) return Zap
   return Star
 }
 

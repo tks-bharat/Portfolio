@@ -220,6 +220,11 @@ export const SKILLS = {
 
 export const ACHIEVEMENTS = [
   {
+    title: "AI Impact Summit 2026",
+    description: "Invitee in the AI Impact Summit held at Delhi from 16th Feb to 21st Feb 2026, organized by the Govt. of India.",
+    category: "Summit",
+  },
+  {
     title: "JEE Advanced 2022",
     description: "Secured All India Rank 4936 in the Joint Entrance Examination (JEE) Advanced, 2022.",
     category: "Academic",
