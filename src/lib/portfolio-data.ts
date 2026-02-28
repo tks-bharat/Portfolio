@@ -226,7 +226,7 @@ export const ACHIEVEMENTS = [
   },
   {
     title: "JEE Advanced 2022",
-    description: "Secured All India Rank 4936 in the Joint Entrance Examination (JEE) Advanced, 2022.",
+    description: "Secured All India Rank 4936 in the Joint Entrance Examination (JEE) Advanced 2022, clearing what is widely recognized as the world's second toughest examination.",
     category: "Academic",
   },
   {
