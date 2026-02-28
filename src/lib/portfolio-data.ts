@@ -221,7 +221,7 @@ export const SKILLS = {
 export const ACHIEVEMENTS = [
   {
     title: "AI Impact Summit 2026",
-    description: "Invitee in the AI Impact Summit held at Delhi from 16th Feb to 21st Feb 2026, organized by the Govt. of India.",
+    description: "Invitee in the AI Impact Summit held at Delhi from 16th Feb to 21st Feb 2026, organized and appointed by Govt. of India.",
     category: "Summit",
   },
   {
