@@ -97,6 +97,20 @@ export const WORK_EXPERIENCE = [
 
 export const EXTERNSHIPS = [
   {
+    role: "NASCAR NY Racing Sponsorship ROI Extern",
+    company: "NASCAR NY Racing (via Extern)",
+    period: "Apr 2026 - Ongoing",
+    description: "Developing a multi-factor Sponsorship ROI scoring model by integrating large datasets from race performance, social media, and brand visibility. Performing data preprocessing and feature engineering using Python (Pandas, NumPy) to translate analytical findings into strategic business recommendations.",
+    details: [
+      "Sponsorship ROI Modeling",
+      "Python (Pandas, NumPy)",
+      "EDA (Matplotlib, Seaborn)",
+      "Web Scraping (BeautifulSoup)",
+      "Sports Marketing Analytics",
+      "Data Acquisition & Automation"
+    ]
+  },
+  {
     role: "Deal Sourcing & Startup Analysis Extern",
     company: "Mangusta Capital (via Extern)",
     period: "Jan 2026 - Apr 2026",
@@ -151,7 +165,7 @@ export const PROJECTS = [
     solution: "Implemented a 3-block Sequential CNN architecture with Dropout and optimized training schedules.",
     technologies: "Python, TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Seaborn",
     impact: "94% classification accuracy and 95% macro-averaged F1-score.",
-    link: "https://github.com/kirtiraj2215/Sign-language-decoder-DIP/tree/main",
+    link: "https://www.interpretcloud.com/wp-content/uploads/2023/03/girl-asking-for-help-in-sign-language-2022-06-22-21-15-35-utc-min-scaled-1.webp",
     isPrivate: false,
     image: "project-asl"
   },
