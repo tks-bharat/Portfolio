@@ -29,52 +29,66 @@ export function Header() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold font-headline text-primary">Profolio Canvas</span>
-        </Link>
+    <header className="sticky top-0 z-50 w-full">
+      <div className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container mx-auto px-4 flex h-16 items-center justify-between">
+          <Link href="/" className="flex items-center space-x-2">
+            <span className="text-xl font-bold font-headline text-primary">Profolio Canvas</span>
+          </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          {NAV_ITEMS.map((item) => (
-            <Link 
-              key={item.href} 
-              href={item.href}
-              className="transition-colors hover:text-accent font-semibold"
-            >
-              {item.label}
-            </Link>
+          {/* Desktop Nav */}
+          <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+            {NAV_ITEMS.map((item) => (
+              <Link 
+                key={item.href} 
+                href={item.href}
+                className="transition-colors hover:text-accent font-semibold"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile Nav */}
+          <div className="md:hidden">
+            {mounted && (
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="bg-black/95 border-white/10 text-white">
+                  <SheetHeader>
+                    <SheetTitle className="text-left text-white">Navigation</SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col space-y-4 mt-8">
+                    {NAV_ITEMS.map((item) => (
+                      <Link 
+                        key={item.href} 
+                        href={item.href}
+                        className="text-lg font-medium hover:text-accent transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </SheetContent>
+              </Sheet>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Moving Text Effect Ticker */}
+      <div className="w-full bg-accent/10 border-b border-white/10 backdrop-blur-sm overflow-hidden py-1.5">
+        <div className="flex whitespace-nowrap animate-marquee">
+          {[...Array(6)].map((_, i) => (
+            <span key={i} className="mx-8 text-[10px] md:text-xs font-bold text-accent uppercase tracking-[0.2em] flex items-center gap-2">
+              <span className="h-1 w-1 rounded-full bg-accent"></span>
+              Selected in Wall Street Quant BootCamp ~ 2% Acceptance
+            </span>
           ))}
-        </nav>
-
-        {/* Mobile Nav */}
-        <div className="md:hidden">
-          {mounted && (
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right">
-                <SheetHeader>
-                  <SheetTitle className="text-left">Navigation</SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col space-y-4 mt-8">
-                  {NAV_ITEMS.map((item) => (
-                    <Link 
-                      key={item.href} 
-                      href={item.href}
-                      className="text-lg font-medium hover:text-accent transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              </SheetContent>
-            </Sheet>
-          )}
         </div>
       </div>
     </header>
