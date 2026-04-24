@@ -83,11 +83,17 @@ export function Header() {
       {/* Moving Text Effect Ticker */}
       <div className="w-full bg-accent/10 border-b border-white/10 backdrop-blur-sm overflow-hidden py-1.5">
         <div className="flex whitespace-nowrap animate-marquee">
-          {[...Array(6)].map((_, i) => (
-            <span key={i} className="mx-8 text-[10px] md:text-xs font-bold text-accent uppercase tracking-[0.2em] flex items-center gap-2">
-              <span className="h-1 w-1 rounded-full bg-accent"></span>
-              Selected in Wall Street Quant BootCamp ~ 2% Acceptance
-            </span>
+          {[...Array(4)].map((_, i) => (
+            <React.Fragment key={i}>
+              <span className="mx-8 text-[10px] md:text-xs font-bold text-accent uppercase tracking-[0.2em] flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-accent"></span>
+                Selected in Wall Street Quant BootCamp ~ 2% Acceptance
+              </span>
+              <span className="mx-8 text-[10px] md:text-xs font-bold text-accent uppercase tracking-[0.2em] flex items-center gap-2">
+                <span className="h-1 w-1 rounded-full bg-accent"></span>
+                In Final Stage in IIMA Ventures AI Summer Residency Program
+              </span>
+            </React.Fragment>
           ))}
         </div>
       </div>
