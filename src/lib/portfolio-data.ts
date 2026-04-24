@@ -1,4 +1,3 @@
-
 export const PERSONAL_INFO = {
   name: "Tanmay Kumar Shrivastava",
   title: "Data & AI Researcher specializing in NLP, LLMs, and scalable machine learning systems",
@@ -59,7 +58,7 @@ export const WORK_EXPERIENCE = [
   },
   {
     role: "India Space Tech Intern",
-    company: "India Space Lab (Technical Training Program / Supported by ISRO, NASA, JAXA, UN-GGIM)",
+    company: "India Space Lab (Supported by ISRO, NASA, JAXA, UN-GGIM)",
     period: "June 15 – July 31, 2025",
     description: "Developed IoT project 'ESP32 Joke Machine for Programmers' integrating ESP32 microcontroller, TFT display, RESTful APIs, and Arduino IDE/Wokwi simulator.",
     details: [
@@ -94,6 +93,23 @@ export const WORK_EXPERIENCE = [
       "Certificate of Qualification"
     ],
   },
+];
+
+export const EXTERNSHIPS = [
+  {
+    role: "Deal Sourcing & Startup Analysis Extern",
+    company: "Mangusta Capital (via Extern)",
+    period: "Jan 2026 - Apr 2026",
+    description: "Conducted deep-dive research on startups, analyzing technologies, market trends, and competition. Created due diligence summaries and synthesis reports to support investment decisions in Venture Capital and AI.",
+    details: [
+      "Venture Capital",
+      "AI Startup Research",
+      "Investment Memo",
+      "Market Analysis",
+      "Vertical AI",
+      "AI-Driven Insights"
+    ]
+  }
 ];
 
 export const PROJECTS = [
