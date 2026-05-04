@@ -24,15 +24,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-white mb-12 text-center">Education</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { period: "2022 - Present", degree: "B.Tech. Data Science & AI", school: "IIT Bhilai", score: "CGPA: 7.21/10" },
-                { period: "2020 - 2022", degree: "Senior Secondary", school: "DPS Mathura Road", score: "Score: 77.4%" },
-                { period: "2020", degree: "Secondary School", school: "DPS Indirapuram", score: "Score: 89.9%" }
+                { period: "2022 - Present", degree: "B.Tech. Data Science & AI", school: "IIT Bhilai" },
+                { period: "2020 - 2022", degree: "Senior Secondary", school: "DPS Mathura Road" },
+                { period: "2020", degree: "Secondary School", school: "DPS Indirapuram" }
               ].map((edu, i) => (
                 <div key={i} className="p-6 border border-white/10 rounded-xl bg-black/40 backdrop-blur-md hover:border-accent/50 transition-all shadow-xl">
                   <span className="text-accent text-xs font-bold uppercase tracking-wider">{edu.period}</span>
                   <h3 className="font-bold text-lg text-white mt-2 mb-1">{edu.degree}</h3>
-                  <p className="text-sm text-white/60 mb-2">{edu.school}</p>
-                  <p className="text-sm font-semibold text-white/80">{edu.score}</p>
+                  <p className="text-sm text-white/60">{edu.school}</p>
                 </div>
               ))}
             </div>

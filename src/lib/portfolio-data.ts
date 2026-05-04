@@ -14,21 +14,18 @@ export const EDUCATION = [
     program: "B.Tech. in Data Science & AI",
     institution: "Indian Institute of Technology (IIT) Bhilai",
     location: "Chhattisgarh, India",
-    score: "7.21/10 (2.9/4.0)",
     period: "2022-Present (Upto 7th Sem)",
   },
   {
     program: "Senior Secondary School",
     institution: "Delhi Public School Mathura Road",
     location: "Delhi, India",
-    score: "77.4%",
     period: "2020-22",
   },
   {
     program: "Secondary School",
     institution: "Delhi Public School Indirapuram",
     location: "UP, India",
-    score: "89.9%",
     period: "2020",
   },
 ];
