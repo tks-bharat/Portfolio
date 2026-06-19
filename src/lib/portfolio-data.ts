@@ -43,6 +43,14 @@ export const PUBLICATIONS = [
 
 export const WORK_EXPERIENCE = [
   {
+    role: "NASCAR Sponsorship ROI Extern",
+    company: "NY Racing Team (via Extern)",
+    period: "Apr 2026 - Present",
+    description: "Developing a multi-factor Sponsorship ROI scoring model by integrating large datasets from race performance, social media, and brand visibility. Performing data preprocessing and feature engineering using Python (Pandas, NumPy) to translate analytical findings into strategic business recommendations.",
+    details: ["Remote · Part-time", "Sponsorship ROI Modeling", "Python (Pandas, NumPy)", "EDA (Matplotlib, Seaborn)", "Web Scraping (BeautifulSoup)"],
+    image: "experience-ny-racing"
+  },
+  {
     role: "Research Associate",
     company: "PredictRAM - Params Data Provider Pvt Ltd",
     period: "Jan 2026 - Apr 2026",
@@ -103,20 +111,6 @@ export const WORK_EXPERIENCE = [
 ];
 
 export const EXTERNSHIPS = [
-  {
-    role: "NASCAR NY Racing Sponsorship ROI Extern",
-    company: "NASCAR NY Racing (via Extern)",
-    period: "Apr 2026 - Ongoing",
-    description: "Developing a multi-factor Sponsorship ROI scoring model by integrating large datasets from race performance, social media, and brand visibility. Performing data preprocessing and feature engineering using Python (Pandas, NumPy) to translate analytical findings into strategic business recommendations.",
-    details: [
-      "Sponsorship ROI Modeling",
-      "Python (Pandas, NumPy)",
-      "EDA (Matplotlib, Seaborn)",
-      "Web Scraping (BeautifulSoup)",
-      "Sports Marketing Analytics",
-      "Data Acquisition & Automation"
-    ]
-  },
   {
     role: "Deal Sourcing & Startup Analysis Extern",
     company: "Mangusta Capital (via Extern)",
