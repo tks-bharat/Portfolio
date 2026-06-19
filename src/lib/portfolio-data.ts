@@ -48,7 +48,6 @@ export const WORK_EXPERIENCE = [
     period: "Apr 2026 - Present",
     description: "Developing a multi-factor Sponsorship ROI scoring model by integrating large datasets from race performance, social media, and brand visibility. Performing data preprocessing and feature engineering using Python (Pandas, NumPy) to translate analytical findings into strategic business recommendations.",
     details: ["Remote · Part-time", "Sponsorship ROI Modeling", "Python (Pandas, NumPy)", "EDA (Matplotlib, Seaborn)", "Web Scraping (BeautifulSoup)"],
-    image: "experience-ny-racing"
   },
   {
     role: "Research Associate",
@@ -56,7 +55,6 @@ export const WORK_EXPERIENCE = [
     period: "Jan 2026 - Apr 2026",
     description: "Conducting equity and market research, analyzing financial data, and supporting investment insights under regulatory frameworks.",
     details: ["TITANIUM trading strategies", "Technical and fundamental analysis", "Event-based trading analytics"],
-    image: "experience-predictram"
   },
   {
     role: "Backend Developer Intern",
