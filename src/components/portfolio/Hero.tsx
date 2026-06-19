@@ -5,6 +5,18 @@ import { Button } from '@/components/ui/button'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 import { Mail, Github, Linkedin, MapPin } from 'lucide-react'
 
+const OrcidIcon = ({ className }: { className?: string }) => (
+  <svg 
+    role="img" 
+    viewBox="0 0 24 24" 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="currentColor"
+    className={className}
+  >
+    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.541 0 .98.439.98.98s-.439.98-.98.98-.98-.439-.98-.98.439-.98.98-.98zm-.854 1.842h1.708v10.134H6.515V6.22zm3.915 0h3.178c1.899 0 3.121 1.062 3.121 2.924 0 1.638-1.014 2.652-2.31 2.855l2.457 4.355h-1.895l-2.176-4.008h-1.685v4.008H10.43V6.22zm1.708 1.554v2.798h1.469c.94 0 1.481-.465 1.481-1.399 0-.934-.541-1.399-1.481-1.399h-1.469z"/>
+  </svg>
+)
+
 export function Hero() {
   const profileImgObj = PlaceHolderImages.find(img => img.id === 'profile-pic')
   const profileImg = (profileImgObj && profileImgObj.imageUrl) ? profileImgObj.imageUrl : 'https://media.licdn.com/dms/image/v2/D5603AQF-m2YyBH9NCw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1672087152753?e=2147483647&v=beta&t=6QzvHYA2ug1tAOew2eGwRZxyPvShNY3BSH-c4TkS20s'
@@ -61,6 +73,13 @@ export function Hero() {
               <Button size="icon" variant="outline" className="rounded-full border-white/20 text-white hover:bg-white/10" asChild>
                 <a href={PERSONAL_INFO.github} target="_blank" rel="noopener noreferrer"><Github /></a>
               </Button>
+              {PERSONAL_INFO.orcid && (
+                <Button size="icon" variant="outline" className="rounded-full border-white/20 text-white hover:bg-white/10" asChild>
+                  <a href={PERSONAL_INFO.orcid} target="_blank" rel="noopener noreferrer" title="ORCID Profile">
+                    <OrcidIcon className="h-4 w-4" />
+                  </a>
+                </Button>
+              )}
             </div>
           </div>
 

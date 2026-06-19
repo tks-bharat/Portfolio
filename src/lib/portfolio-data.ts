@@ -7,6 +7,7 @@ export const PERSONAL_INFO = {
   phone: "+91-8851008938",
   linkedin: "https://www.linkedin.com/in/tanmay-kumar-shrivastava",
   github: "https://github.com/Tanmay-IITDSAI",
+  orcid: "https://orcid.org/0009-0009-2882-0186",
 };
 
 export const EDUCATION = [
