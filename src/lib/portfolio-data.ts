@@ -45,7 +45,7 @@ export const WORK_EXPERIENCE = [
   {
     role: "Research Associate",
     company: "PredictRAM - Params Data Provider Pvt Ltd",
-    period: "Jan 2026 - Apr 2026 (Ongoing)",
+    period: "Jan 2026 - Apr 2026",
     description: "Conducting equity and market research, analyzing financial data, and supporting investment insights under regulatory frameworks.",
     details: ["TITANIUM trading strategies", "Technical and fundamental analysis", "Event-based trading analytics"],
     image: "experience-predictram"
