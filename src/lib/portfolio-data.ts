@@ -33,7 +33,7 @@ export const EDUCATION = [
 export const PUBLICATIONS = [
   {
     title: "Disentangling Style & Semantics: Knowledge Graph-Guided Activation Steering",
-    venue: "PAKDD 2026 (Special Track on LLMs for Data Science)",
+    venue: "PAKDD 2026 (Special Track on LLMs for Data Science), Hong Kong",
     date: "2026",
     abstract: "Implemented contrastive activation steering and activation-space intervention during inference. Used Knowledge Graph-guided activation steering with PCA-based style vectors and moderate steering multipliers to achieve optimal balance of style and factual fidelity.",
     link: "https://link.springer.com/chapter/10.1007/978-981-92-1468-6_42",
