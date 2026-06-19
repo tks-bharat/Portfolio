@@ -30,6 +30,17 @@ export const EDUCATION = [
   },
 ];
 
+export const PUBLICATIONS = [
+  {
+    title: "Disentangling Style & Semantics: Knowledge Graph-Guided Activation Steering",
+    venue: "PAKDD 2026 (Special Track on LLMs for Data Science)",
+    date: "2026",
+    abstract: "Implemented contrastive activation steering and activation-space intervention during inference. Used Knowledge Graph-guided activation steering with PCA-based style vectors and moderate steering multipliers to achieve optimal balance of style and factual fidelity.",
+    link: "https://link.springer.com/chapter/10.1007/978-981-92-1468-6_42",
+    tags: ["LLMs", "Knowledge Graphs", "Activation Steering", "Disentanglement"]
+  }
+];
+
 export const WORK_EXPERIENCE = [
   {
     role: "Research Associate",
@@ -85,7 +96,6 @@ export const WORK_EXPERIENCE = [
     details: [
       "Data analysis on 1M+ data points",
       "MS Excel & Power BI",
-      "Score: 83.33%",
       "Letter of Recommendation",
       "Certificate of Qualification"
     ],
@@ -125,20 +135,6 @@ export const EXTERNSHIPS = [
 
 export const PROJECTS = [
   {
-    id: "kg-activation-steering",
-    title: "Disentangling Style & Semantics: Knowledge Graph-Guided Activation Steering",
-    category: "Research",
-    period: "Nov 2025",
-    description: "Implemented contrastive activation steering and activation-space intervention during inference. Accepted for PAKDD Special Track on LLMs for Data Science.",
-    problem: "Balancing style disentanglement with factual fidelity in LLMs.",
-    solution: "Used Knowledge Graph-guided activation steering with PCA-based style vectors and moderate steering multipliers.",
-    technologies: "Python, LLaMA-2-7B, HuggingFace Transformers, NetworkX, Matplotlib, Gemini 2.5 Flash Lite",
-    impact: "Achieved optimal balance of style and factual fidelity near alpha=3.0.",
-    link: "https://github.com/Tanmay-IITDSAI",
-    isPrivate: true,
-    image: "project-graph"
-  },
-  {
     id: "writing-helper",
     title: "Intelligent Helper in Writing Problems",
     category: "NLP",
@@ -162,7 +158,7 @@ export const PROJECTS = [
     solution: "Implemented a 3-block Sequential CNN architecture with Dropout and optimized training schedules.",
     technologies: "Python, TensorFlow, Keras, OpenCV, NumPy, Pandas, Matplotlib, Seaborn",
     impact: "94% classification accuracy and 95% macro-averaged F1-score.",
-    link: "https://www.interpretcloud.com/wp-content/uploads/2023/03/girl-asking-for-help-in-sign-language-2022-06-22-21-15-35-utc-min-scaled-1.webp",
+    link: "https://github.com/Tanmay-IITDSAI",
     isPrivate: false,
     image: "project-asl"
   },

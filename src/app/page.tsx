@@ -1,6 +1,7 @@
 import { Header } from '@/components/portfolio/Header'
 import { Hero } from '@/components/portfolio/Hero'
 import { AboutSection } from '@/components/portfolio/AboutSection'
+import { PublicationsSection } from '@/components/portfolio/PublicationsSection'
 import { ExperienceSection } from '@/components/portfolio/ExperienceSection'
 import { ProjectsSection } from '@/components/portfolio/ProjectsSection'
 import { SkillsSection } from '@/components/portfolio/SkillsSection'
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <AboutSection />
+        <PublicationsSection />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
